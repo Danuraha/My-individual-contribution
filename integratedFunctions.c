@@ -21,11 +21,11 @@ int main()
             servo1Left();
         }
 
-        else if((*positionLogic()==3)&& trigger==1 && (ultraSonicVal()>=10))
+        else if((*(positionLogic()+2)==3)&& trigger==1 && (ultraSonicVal()>=10))
         {
             servo3Up();
         }
-        else if((*positionLogic()==4)&& trigger==1 && (ultraSonicVal()>=10))
+        else if((*(positionLogic()+2)==4)&& trigger==1 && (ultraSonicVal()>=10))
         {
             servo3Down();
         }
