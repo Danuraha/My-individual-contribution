@@ -30,12 +30,12 @@ int main()
             servo3Down();
         }
 
-        else if((*positionLogic()==5) && trigger==1 && (fsrVal()<=1.6))
+        else if((trigger==1) && (fsrVal()<=5))
         {
            flex();
         }
 
-        else if ((*positionLogic()==5) && trigger==1 && (fsrVal()>=1.6))
+        else if ((trigger==1) && (fsrVal()>=5))
         {
             stopGripper();
         }
