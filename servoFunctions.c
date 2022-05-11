@@ -24,6 +24,11 @@ void rotateMinusNinty()
     _delay_ms(1500);
 }
 
+void stopGripper()
+{ 
+    _delay_ms(15000000000);
+    pin = 175;	/* Set servo shaft at 0° position */
+ 
 
 
 
@@ -58,11 +63,6 @@ void shrinkGripper()
 }
 
 void servoStop()
-{
-    rotateZero();
-}
-
-void stopGripper()
 {
     rotateZero();
 }
